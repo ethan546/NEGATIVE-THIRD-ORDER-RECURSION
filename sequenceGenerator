@@ -1,0 +1,14 @@
+a0 = 5
+a1 = 12
+a2 = 13
+
+
+max= 25     #highest n value solved for
+
+for i in range (3,max+1):
+    a3 = a2+a1-a0
+    a0=a1
+    a1=a2
+    a2=a3
+
+    print 'a_',i,'=',a3
