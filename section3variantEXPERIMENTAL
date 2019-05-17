@@ -1,0 +1,42 @@
+#!/usr/bin/python
+#This is to see if I can check if the specific values of s_n are primes
+#Who knows if its gonna save much time tho... :/
+#hey look it actually worked! (could check to an n value 10 higher than before)
+
+
+
+b0 = 0
+b1 = 1
+b2 = 1
+
+f0=0        #always 0,1,1 (we never change it)
+f1=1
+f2=1
+
+sList = []
+
+for i in range (3,36):  #max will be one less than the max value here
+    b3 = b2+b1+b0       #positive third-order Fibonacci
+    b0=b1
+    b1=b2
+    b2=b3
+
+    f3=f2+f1            #the Fibonacci sequence
+    f1=f2
+    f2=f3
+
+    s=(b3-f3)
+    print 's_',i,'=',s#'     2^(n-2)=',(2**(i-2))
+    sList.append (s)
+
+for possiblePrime in sList: #this is where we check for primes
+
+    # Assume number is prime until shown it is not.
+    isPrime = True
+    for num in range(2, possiblePrime):
+        if possiblePrime % num == 0:
+            isPrime = False
+
+    if isPrime:
+        print possiblePrime, 'is a prime'
+print 'done'

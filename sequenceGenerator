@@ -1,6 +1,10 @@
+#!/usr/bin/python
+
+#just the sequence. No more, no less
+
 a0 = 5
-a1 = 12
-a2 = 13
+a1 = 14
+a2 = 5
 
 
 max= 25     #highest n value solved for

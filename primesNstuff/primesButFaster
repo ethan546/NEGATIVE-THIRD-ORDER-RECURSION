@@ -1,0 +1,28 @@
+#!/usr/bin/python
+
+#The base of this code comes from:
+#https://hackernoon.com/prime-numbers-using-python-824ff4b3ea19
+
+#This is to see if I can cut down on time by stopping the for loop when
+#isPrime is False
+
+#It works (barely)
+
+
+primeMax=100
+primes = [2]
+
+#step size of 2 since there are no even primes greater than 2
+for possiblePrime in range(3, primeMax,2):
+    # Assume number is prime until shown it is not.
+    isPrime = True
+    for num in primes: #only check if its divisible by primes (not composite nums)
+        if possiblePrime % num == 0:
+            isPrime = False
+            break
+
+
+    if isPrime:
+        primes.append(possiblePrime)
+
+print primes
