@@ -1,1 +1,1 @@
-This is a repo for a short math paper I wrote on negative third order recursion
+This is a repo for a short math paper I wrote for a class on negative third order recursion. There is the PDF of the actual paper, as well as a directory full of all the code used to conduct research for the paper.
