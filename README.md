@@ -1,1 +1,1 @@
-This is the main repository for my public work
+This is a repo for a short math paper I wrote on negative third order recursion
